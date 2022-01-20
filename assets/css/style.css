@@ -1,0 +1,498 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Start css */
+
+html {
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+.text-center {
+    text-align: center;
+}
+.text-white {
+    color: #fff !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.333333%;
+}
+.col-full {
+    width: 100%;
+}
+
+.pull-right {
+    float: right;
+}
+
+.btn {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 17px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Main */
+#main {
+
+}
+
+#header {
+    position: fixed;
+    height: 50px;
+    background-color: goldenrod;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    padding:  0 24px;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a:hover ,
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: goldenrod;
+}
+
+#nav .arrow-down {
+    font-size: 12px;
+}
+
+
+#nav .subnav {
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    min-width: 120px;
+    list-style-type:none;
+    box-shadow: 0 0 6px rgb(202, 168, 14);  
+}
+
+#nav .subnav a {
+    color:  goldenrod;
+    padding: 0  12px;
+    
+}
+
+#header .mobile-menu-button {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-button,
+#header .search-button {
+    line-height: 50px;
+    color: #fff;
+    font-size: 25px;
+    float: right;
+    padding: 0 16px;
+}
+
+
+#header .mobile-menu-button:hover,
+#header .search-button:hover {
+    color: goldenrod;
+    background-color: #ccc;
+}
+
+#slider {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50%;
+    background: url('/wed_designer/assets/image/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+
+}
+
+#slider .text-heading {
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+#slider .text-decription {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+
+#content {
+
+
+}
+
+#content .content-heading {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+
+#content .team-member {
+    margin-top: 32px;
+}
+
+#content .class-name {
+    font-size: 15px;
+}
+
+
+#content .team-member img {
+    width: 154px;
+    height: 152px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+/* Tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.ticket-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.ticket-list .sold-out {
+    background-color: red;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+/* Places */
+.place-list {
+    margin-top: 16px;
+    
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+    
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-decription {
+    margin-top: 15px;
+
+}
+
+
+/* Form contact */
+.contact-content {
+    margin-top: 48px;
+
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline-color: goldenrod;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+/* Footer section */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+#footer .socials a {
+    text-decoration: none;
+    color: goldenrod;
+}
+#footer .copyright a:hover,
+#footer .socials a:hover {
+    color: rgb(241, 209, 125);
+}
+#footer .copyright {
+    color: rgb(236, 194, 88);
+}
+#footer .copyright a {
+    color: rgb(236, 194, 88);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalAnimation ease-in-out 0.5s;
+}
+
+header.modal-header {
+    background-color: #006666;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+header .modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+label.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.modal-button {
+    background-color: #006666;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    padding: 16px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    opacity: 0.9;
+}
+
+.modal-pay-icon {
+    font-size: 14px;
+}
+
+.modal-footer {
+    font-size: 15px;
+    text-align: right;
+    padding: 16px;
+}
+
+.modal-footer a {
+    color: red;
+}
+
+@keyframes modalAnimation {
+    from{
+        opacity: 0.8;
+        transform: translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
