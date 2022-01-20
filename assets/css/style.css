@@ -69,7 +69,9 @@ html {
     padding: 9px 17px;
     display: inline-block;
     margin-top: 15px;
-    border: none
+    border: none;
+    border-radius: 21px;
+
 }
 
 .btn:hover {
@@ -175,7 +177,7 @@ html {
     position: relative;
     margin-top: 50px;
     padding-top: 50%;
-    background: url('/wed_designer/assets/image/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../image/slider/slider1.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -184,7 +186,7 @@ html {
     bottom: 47px;
     width: 100%;
     text-align: center;
-
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
 }
 
 #slider .text-heading {
@@ -353,6 +355,7 @@ html {
     border: 1px solid #ccc;
     width: 100%;
     outline-color: goldenrod;
+    border-radius: 21px;
 }
 
 .map-section img {
